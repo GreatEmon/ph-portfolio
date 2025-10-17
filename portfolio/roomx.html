@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details: RoomX - Roommate Finder</title>
+    <!-- Bootstrap CSS for responsiveness and styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Tech Stack Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            /* Bootstrap Primary Blue for Connection/Home Theme */
+            --secondary-bg: #f0f8ff;
+            /* Light, airy blue background */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--secondary-bg);
+            color: #212529;
+        }
+
+        .project-header {
+            background-color: white;
+            padding: 30px 0;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 0.75rem;
+            /* Slightly more rounded corners */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 25px;
+            border: none;
+        }
+
+        .section-card h4 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .tech-icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: start;
+        }
+
+        .tech-icon {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .tech-icon i {
+            font-size: 3.2rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .btn-blue-outline {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-blue-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="project-header">
+        <div class="container">
+            <a href="index.html" class="btn btn-outline-secondary mb-3"><i class="fas fa-arrow-left"></i> Back to
+                Portfolio</a>
+            <h1 class="display-4 fw-bold mb-0 text-primary"><i class="fas fa-house-user me-3"></i> RoomX – Find Your
+                Perfect Roommate</h1>
+            <p class="lead">A full-stack MERN application dedicated to connecting compatible roommates based on
+                preferences and interests.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Project Summary and Description -->
+        <div class="section-card">
+            <h4><i class="fas fa-info-circle me-2"></i> Project Overview</h4>
+            <p>
+                RoomX is a dynamic <strong>Roommate Finder Website</strong> built on the MERN stack (MongoDB, Express,
+                React, Node.js). It provides a secure and modern platform for users to connect based on crucial criteria
+                like <strong>location, budget, and lifestyle preferences</strong>.
+            </p>
+            <p>
+                The application allows users to create detailed profiles, add their own room listings, and securely
+                interact with interested users. Key features include <strong>protected routes</strong>, <strong>Google
+                    Sign-In integration</strong>, and <strong>interactive engagement tools</strong> like the "Like"
+                system.
+            </p>
+        </div>
+
+        <!-- Links and Status -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="section-card h-100">
+                    <h4><i class="fas fa-globe me-2"></i> Live Status</h4>
+                    <p class="mb-3">Explore the fully responsive client-side web application.</p>
+                    <a href="https://roomx-ffc76.web.app/" target="_blank" class="btn btn-primary w-100 py-2 fw-bold">
+                        <i class="fas fa-external-link-alt me-2"></i> View Live Site (Frontend)
+                    </a>
+                    <a href="https://rommies-backend.vercel.app/" target="_blank"
+                        class="btn btn-blue-outline w-100 py-2 fw-bold mt-2">
+                        <i class="fas fa-server me-2"></i> View Live API (Backend)
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="section-card h-100">
+                    <h4><i class="fab fa-github me-2"></i> Source Code Access</h4>
+                    <p class="mb-3">Access to both client-side and server-side repositories for review.</p>
+                    <div class="d-grid gap-2">
+                        <a href="https://github.com/GreatEmon/RoomX-client" target="_blank"
+                            class="btn btn-blue-outline py-2 fw-bold">
+                            <i class="fab fa-react me-2"></i> Client-Side Repository
+                        </a>
+                        <a href="https://github.com/GreatEmon/RoomX-backend" target="_blank"
+                            class="btn btn-dark py-2 fw-bold">
+                            <i class="fas fa-server me-2"></i> Server-Side Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Technology Stack Used -->
+        <div class="section-card">
+            <h4><i class="fas fa-code me-2"></i> Main Technology Stack (MERN)</h4>
+            <div class="tech-icon-container">
+
+                <div class="tech-icon">
+                    <i class="fab fa-react"></i> React.js (Vite)
+                </div>
+                <div class="tech-icon">
+                    <i class="fab fa-node-js"></i> Node.js / Express
+                </div>
+                <div class="tech-icon">
+                    <i class="fas fa-database"></i> MongoDB Atlas
+                </div>
+                <div class="tech-icon">
+                    <i class="fab fa-google"></i> Firebase Auth
+                </div>
+                <div class="tech-icon">
+                    <i class="fas fa-shield-alt"></i> JWT Security
+                </div>
+                <div class="tech-icon">
+                    <i class="fas fa-magic"></i> Lottie / Framer Motion
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Challenges Faced -->
+        <div class="section-card">
+            <h4><i class="fas fa-wrench me-2"></i> Key Implementation Challenges</h4>
+            <ul>
+                <li><strong>Secure Contact Reveal:</strong> Implementing the logic to <strong>only reveal the contact
+                                number</strong> after a user clicks the "Like" button (showing genuine interest),
+                                    improving security and reducing spam.</li>
+                <li><strong>Protected Routes & User State:</strong> Managing user authentication and role-based state
+                            using <strong>Firebase Authentication</strong> on the client and coordinating access control
+                                    via <strong>JWT</strong> on the server for private routes (e.g., `/add-roommate`).
+                </li>
+                <li><strong>Preference-Based Search:</strong> Designing the MongoDB schema to efficiently filter and
+                            search listings based on multiple, multi-valued lifestyle preferences (e.g., interests,
+                            cleaning habits, party tolerance).</li>
+                <li><strong>Modern UX:</strong> Integrating complex third-party libraries like <strong>Lottie
+                                React</strong> for smooth, modern animations while maintaining fast load times and
+                                    overall responsiveness.</li>
+            </ul>
+        </div>
+
+        <!-- Potential Improvements and Future Plans -->
+        <div class="section-card">
+            <h4><i class="fas fa-lightbulb me-2"></i> Potential Improvements & Future Plans</h4>
+            <ul>
+                <li><strong>Chat Integration:</strong> Implement a private, real-time chat feature (using
+                            WebSockets/Socket.io) to allow interested parties to communicate directly within the
+                            platform without revealing personal contact information initially.</li>
+                <li><strong>Advanced Matching Algorithm:</strong> Develop a more sophisticated matching score that weighs
+                            compatibility factors (budget, location, and lifestyle) to suggest the top 5 compatible
+                            roommates for any given listing.</li>
+                <li><strong>Image Upload Service:</strong> Integrate a dedicated service like Firebase Storage or
+                            Cloudinary to handle multiple image uploads for listings, instead of relying on simple URLs.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS (optional, but good practice) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
